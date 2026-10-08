@@ -6,7 +6,7 @@ def calculate_discount(price, discount_percent):
     
   if not isinstance(price, (int, float)) or isinstance(price, bool):
     return 0
-  if not isintance(discount_percent, (int, float)) or isinstance(discount_percent, bool):
+  if not isinstance(discount_percent, (int, float)) or isinstance(discount_percent, bool):
     return 0
   if price < 0 or not 0 <= discount_percent <= 100:
     return 0

@@ -4,7 +4,9 @@
 
 def update_inventory(current, updates):
     # TODO: Implement merge logic
-    pass
+    result = current.copy()
+    result.update(updates)
+    return result
 
 # Test Case
 current_inv = {'Brakes': 10, 'Oil': 5}
